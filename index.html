@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>BuyAnythingX - Online Store</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -19,8 +23,7 @@
     <header class="header">
         <div class="container header-content">
 
-            <h1 class="logo">BuyAnythingX</h1>
-
+            <img src=".../../Images/logo.png" alt="BuyAnythingX" width="100" height="100">
             <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
             <nav id="navMenu">
@@ -44,35 +47,35 @@
 
     <section class="hero-slider">
 
-    <div class="slides">
+        <div class="slides">
 
-        <div class="slide active">
-            <img src="Images/logo.jpeg">
-            <div class="caption">
-                <h2>Shop Everything You Need 🛍️</h2>
-                <p>Best quality products at best prices</p>
+            <div class="slide active">
+                <img src="Images/logo.jpeg">
+                <div class="caption">
+                    <h2>Shop Everything You Need 🛍️</h2>
+                    <p>Best quality products at best prices</p>
+                </div>
             </div>
+
+            <div class="slide">
+                <img src="Images/slider-2.jpg">
+                <div class="caption">
+                    <h2>Cash On Delivery 🚚</h2>
+                    <p>All over Pakistan available</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="Images/slider-3.jpeg">
+                <div class="caption">
+                    <h2>Latest Trending Products 🔥</h2>
+                    <p>Grab your deal now</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="slide">
-            <img src="Images/slider-2.jpg">
-            <div class="caption">
-                <h2>Cash On Delivery 🚚</h2>
-                <p>All over Pakistan available</p>
-            </div>
-        </div>
-
-        <div class="slide">
-            <img src="Images/slider-3.jpeg">
-            <div class="caption">
-                <h2>Latest Trending Products 🔥</h2>
-                <p>Grab your deal now</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
     <!-- PRODUCTS SECTION -->
     <section class="section bg" id="products">
@@ -89,8 +92,7 @@
                     <img src="Images/Air-conditionar-cover.jpeg">
                 </a>
 
-                <a
-                    href="product.html?name=Air%20Conditionar%20Cover&price=500&img=Images/Air-conditionar-cover.jpeg">
+                <a href="product.html?name=Air%20Conditionar%20Cover&price=500&img=Images/Air-conditionar-cover.jpeg">
                     <h3>Air Conditioner Cover</h3>
                 </a>
 
@@ -104,7 +106,8 @@
             <!-- PRODUCT 2 -->
             <div class="product">
 
-                <a href="product.html?name=Folding%20Laptop%20Stand&price=950&img=Images/Folding-Laptop-Stand.jpeg&desc=Folding Laptop Stand (Discount on Quantity)">
+                <a
+                    href="product.html?name=Folding%20Laptop%20Stand&price=950&img=Images/Folding-Laptop-Stand.jpeg&desc=Folding Laptop Stand (Discount on Quantity)">
                     <img src="Images/Folding-Laptop-Stand.jpeg">
                 </a>
 
@@ -121,7 +124,8 @@
             <!-- PRODUCT 3 -->
             <div class="product">
 
-                <a href="product.html?name=Microfiber%20Flat%20Mop&price=850&img=Images/Microfiber-Flat-Mop.jpeg&desc=Microfiber Flat Mop (Random Colour)">
+                <a
+                    href="product.html?name=Microfiber%20Flat%20Mop&price=850&img=Images/Microfiber-Flat-Mop.jpeg&desc=Microfiber Flat Mop (Random Colour)">
                     <img src="Images/Microfiber-Flat-Mop.jpeg">
                 </a>
 
@@ -137,7 +141,8 @@
             <!-- PRODUCT 4 -->
             <div class="product">
 
-                <a href="product.html?name=Rotating%20Spice%20Rack&price=3250&img=Images/Rotating-Spice-Rack.jpeg&desc=Ferris 18 Jars Rotating Spice Rack">
+                <a
+                    href="product.html?name=Rotating%20Spice%20Rack&price=3250&img=Images/Rotating-Spice-Rack.jpeg&desc=Ferris 18 Jars Rotating Spice Rack">
                     <img src="Images/Rotating-Spice-Rack.jpeg">
                 </a>
 
@@ -153,7 +158,8 @@
             <!-- PRODUCT 5 -->
             <div class="product">
 
-                <a href="product.html?name=Vegetable%20Cutter&price=1350&img=Images/Vegetable-Cutter.jpeg&desc=16in1 Vegetable Cutter(Premium Quality)">
+                <a
+                    href="product.html?name=Vegetable%20Cutter&price=1350&img=Images/Vegetable-Cutter.jpeg&desc=16in1 Vegetable Cutter(Premium Quality)">
                     <img src="Images/Vegetable-Cutter.jpeg">
                 </a>
 
@@ -174,8 +180,7 @@
                     <img src="Images/Mosquito-Racket.jpeg">
                 </a>
 
-                <a
-                    href="product.html?name=Rechargeable%20Mosquito%20Racket&price=1650&img=Images/Mosquito-Racket.jpeg">
+                <a href="product.html?name=Rechargeable%20Mosquito%20Racket&price=1650&img=Images/Mosquito-Racket.jpeg">
                     <h3>Rechargeable Mosquito Racket</h3>
                 </a>
 
@@ -274,19 +279,19 @@
             });
 
         });
-let slides = document.querySelectorAll(".slide");
-let index = 0;
+        let slides = document.querySelectorAll(".slide");
+        let index = 0;
 
-function showSlide() {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
+        function showSlide() {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[index].classList.add("active");
 
-    index++;
-    if(index >= slides.length) index = 0;
-}
+            index++;
+            if (index >= slides.length) index = 0;
+        }
 
-setInterval(showSlide, 3000);
-</script>
+        setInterval(showSlide, 3000);
+    </script>
 
 </body>
 
